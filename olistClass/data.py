@@ -10,9 +10,6 @@ class Olist:
         get_data():
             Loads and returns a dictionary where keys are dataset names (e.g., 'sellers', 'orders')
             and values are pandas DataFrames loaded from corresponding CSV files.
-
-        ping():
-            Prints "pong" to confirm the method is callable.
     """
 
     def __init__(self):
@@ -24,7 +21,7 @@ class Olist:
         Its keys should be 'sellers', 'orders', 'order_items' etc...
         Its values should be pandas.DataFrames loaded from csv files
         """
-        csv_path = Path("~/.lewagon/olist/data/csv").expanduser()
+        csv_path = Path("/Users/gechen/Projects/OlistDataAnalysis/OlistData/data/csv").expanduser()
         file_paths = list(csv_path.iterdir())
         file_names = [file.name for file in file_paths]
         key_name = [name.replace("_dataset.csv", "")
