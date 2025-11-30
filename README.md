@@ -1,5 +1,5 @@
 Objectives of the module
-We will analyze a dataset provided by an e-commerce marketplace called Olist to answer the CEO's question:
+I will analyze a dataset provided by an e-commerce marketplace called Olist to answer the CEO's question:
 
 How could Olist increase its profit?
 
