@@ -16,26 +16,50 @@ The primary goal is to answer the CEO's directive:
 - **Data Analysis & Visualization Practice**: Strengthen skills in data cleaning, preparation, exploratory data analysis (EDA), and visual storytelling through hands-on work with real e-commerce data.
 
 ## 📂 Project Structure
-```text
-OlistDataAnalysis
-├── OlistClass/
-│   ├── data.py          # Data ingestion and cleaning
-│   ├── order.py         # Order entity logic
-│   ├── seller.py        # Seller entity logic
-│   ├── product.py       # Product entity logic
-│   └── utils.py         # Helper functions (stats, plotting)
-├── notebooks/
-│   ├── CEO_request.ipynb        # ⭐️ Complete P&L optimization & recommendations
-│   ├── data_preparation.ipynb   # Data cleaning & preprocessing
+├── DataSchema
+│   ├── olist_data_schema.png
+│   └── olist_schema_v2.png
+├── notebooks
+│   ├── CEO_request.ipynb.         # ⭐️ Complete P&L optimization & recommendations
+│   ├── data_preparation.ipynb     # Data cleaning & preprocessing
 │   ├── exploratory_analysis.ipynb # Initial EDA & visualization
-│   ├── orders.ipynb             # Orders-level analysis
-│   └── sellers.ipynb            # Seller-level analysis
-├── OlistData/           # Raw Dataset
-└── README.md            # Project documentation
-```
+│   ├── orders.ipynb               # Orders-level analysis
+│   └── sellers.ipynb              # Seller-level analysis
+├── OlistClass
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── data.cpython-312.pyc
+│   │   ├── order.cpython-312.pyc
+│   │   ├── seller.cpython-312.pyc
+│   │   └── utils.cpython-312.pyc
+│   ├── data.py          # Data ingestion and cleaning
+│   ├── order.py         # Order entity logic
+│   ├── product.py       # Product entity logic
+│   ├── README.md        # Project documentation
+│   ├── review.py        # Review entity logic
+│   ├── seller.py        # Seller entity logic
+│   └── utils.py         # Helper functions (stats, plotting)
+├── OlistData
+│   └── data
+│       ├── csv
+│       │   ├── olist_customers_dataset.csv 
+│       │   ├── olist_geolocation_dataset.csv
+│       │   ├── olist_order_items_dataset.csv
+│       │   ├── olist_order_payments_dataset.csv
+│       │   ├── olist_order_reviews_dataset.csv
+│       │   ├── olist_orders_dataset.csv
+│       │   ├── olist_products_dataset.csv
+│       │   ├── olist_sellers_dataset.csv
+│       │   └── product_category_name_translation.csv
+│       └── olist.zip
+├── README.md # Project documentation
+├── requirements.txt # Project prerequisites
+└── Results
+    ├── Olist_profit_loss.png.           # Profit & Loss visualization
+    └── Repartition_of_olist_profit.png. # Profit distribution visualization
 
 ## 🚀 Getting Started
-
 ### Prerequisites
 The project requires **Python 3.x** and the following libraries:
 - `pandas`
@@ -84,3 +108,7 @@ To determine profitability, we modeled the P&L as follows:
 
 ## 🗄️ Data Schema
 ![Olist Schema](olist_schema_v2.png)
+
+## 📊 Visualizations
+![alt text](Repartition_of_olist_profit-1.png)
+![alt text](Olist_profit_loss-1.png)
