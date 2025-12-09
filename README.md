@@ -110,5 +110,6 @@ To determine profitability, we modeled the P&L as follows:
 ![Olist Schema](olist_schema_v2.png)
 
 ## 📊 Visualizations
-![alt text](Repartition_of_olist_profit-1.png)
-![alt text](Olist_profit_loss-1.png)
+/Users/gechen/Projects/OlistDataAnalysis/DataSchema/olist_data_schema.png
+/Users/gechen/Projects/OlistDataAnalysis/DataSchema/olist_schema_v2.png
+
