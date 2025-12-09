@@ -16,23 +16,14 @@ The primary goal is to answer the CEO's directive:
 - **Data Analysis & Visualization Practice**: Strengthen skills in data cleaning, preparation, exploratory data analysis (EDA), and visual storytelling through hands-on work with real e-commerce data.
 
 ## 📂 Project Structure
-├── DataSchema
-│   ├── olist_data_schema.png
-│   └── olist_schema_v2.png
 ├── notebooks
-│   ├── CEO_request.ipynb.         # ⭐️ Complete P&L optimization & recommendations
+│   ├── CEO_request.ipynb          # ⭐️ Complete P&L optimization & recommendations
 │   ├── data_preparation.ipynb     # Data cleaning & preprocessing
 │   ├── exploratory_analysis.ipynb # Initial EDA & visualization
 │   ├── orders.ipynb               # Orders-level analysis
 │   └── sellers.ipynb              # Seller-level analysis
 ├── OlistClass
 │   ├── __init__.py
-│   ├── __pycache__
-│   │   ├── __init__.cpython-312.pyc
-│   │   ├── data.cpython-312.pyc
-│   │   ├── order.cpython-312.pyc
-│   │   ├── seller.cpython-312.pyc
-│   │   └── utils.cpython-312.pyc
 │   ├── data.py          # Data ingestion and cleaning
 │   ├── order.py         # Order entity logic
 │   ├── product.py       # Product entity logic
@@ -43,7 +34,7 @@ The primary goal is to answer the CEO's directive:
 ├── OlistData
 │   └── data
 │       ├── csv
-│       │   ├── olist_customers_dataset.csv 
+│       │   ├── olist_customers_dataset.csv
 │       │   ├── olist_geolocation_dataset.csv
 │       │   ├── olist_order_items_dataset.csv
 │       │   ├── olist_order_payments_dataset.csv
@@ -53,11 +44,13 @@ The primary goal is to answer the CEO's directive:
 │       │   ├── olist_sellers_dataset.csv
 │       │   └── product_category_name_translation.csv
 │       └── olist.zip
-├── README.md # Project documentation
-├── requirements.txt # Project prerequisites
-└── Results
-    ├── Olist_profit_loss.png.           # Profit & Loss visualization
-    └── Repartition_of_olist_profit.png. # Profit distribution visualization
+├── Olist_data_schema.png
+├── Olist_profit_loss.png            # Profit & Loss visualization
+├── Olist_schema_v2.png
+├── README.md                        # Project documentation
+├── Repartition_of_olist_profit.png  # Profit distribution visualization
+├── Results
+└── requirements.txt                 # Project prerequisites
 
 ## 🚀 Getting Started
 ### Prerequisites
@@ -72,12 +65,12 @@ The project requires **Python 3.x** and the following libraries:
 
 1. **Install Dependencies**:
    ```bash
-   pip install pandas numpy matplotlib seaborn statsmodels
+   pip install -r requirements.txt
    ```
 
 2. **Configure Data Path**:
    ⚠️ **Note**: The data loading path is currently hardcoded for the local environment.
-   Open `OlistClass/data.py` and modify the `csv_path` variable in the `get_data` method to point to your local `OlistData/data/csv` directory.
+   Open `olistClass/data.py` and modify the `csv_path` variable in the `get_data` method to point to your local `olistData/data/csv` directory.
 
 ### Running the Analysis
 1. Start specific component analyzes in `notebooks/orders.ipynb` or `notebooks/sellers.ipynb` to understand the data.
@@ -107,9 +100,9 @@ To determine profitability, we modeled the P&L as follows:
 *Based on the Olist E-commerce Public Dataset.*
 
 ## 🗄️ Data Schema
-![Olist Schema](olist_schema_v2.png)
+![Olist Schema](Olist_schema_v2.png)
 
 ## 📊 Visualizations
-/Users/gechen/Projects/OlistDataAnalysis/DataSchema/olist_data_schema.png
-/Users/gechen/Projects/OlistDataAnalysis/DataSchema/olist_schema_v2.png
+![alt text](Olist_profit_loss.png)
+![alt text](Repartition_of_olist_profit.png)
 
