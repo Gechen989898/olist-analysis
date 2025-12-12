@@ -1,6 +1,6 @@
-# Olist Data Analysis 🇧🇷
+# Olist Data Analysis
 
-## 📊 Project Overview
+## Project Overview
 This project performs a comprehensive analysis of **Olist**, a leading Brazilian e-commerce marketplace integrator, to find data-driven strategies for profitability.
 
 It also serves as a hands-on exercise to strengthen data analysis and visualization skills through data preparation, exploratory analysis, and business modeling.
@@ -9,7 +9,7 @@ The primary goal is to answer the CEO's directive:
   **"How can Olist increase its profit?"**
   **How many sellers need to be removed to optimize profit**
 
-## 🎯 Objectives
+## Objectives
 - **Profit Optimization**: Determine the optimal number of sellers to maintain on the platform.
 - **Seller Quality Analysis**: Investigate the impact of underperforming sellers on reputation and costs.
 - **P&L Modelling**: Construct a Profit & Loss model incorporating revenues (commissions, fees) and costs (IT infrastructure, reputation damage).
@@ -52,7 +52,7 @@ The primary goal is to answer the CEO's directive:
 ├── Results
 └── requirements.txt                 # Project prerequisites
 
-## 🚀 Getting Started
+## Getting Started
 ### Prerequisites
 The project requires **Python 3.x** and the following libraries:
 - `pandas`
@@ -69,22 +69,22 @@ The project requires **Python 3.x** and the following libraries:
    ```
 
 2. **Configure Data Path**:
-   ⚠️ **Note**: The data loading path is currently hardcoded for the local environment.
+   **Note**: The data loading path is currently hardcoded for the local environment.
    Open `olistClass/data.py` and modify the `csv_path` variable in the `get_data` method to point to your local `olistData/data/csv` directory.
 
 ### Running the Analysis
 1. Start specific component analyzes in `notebooks/orders.ipynb` or `notebooks/sellers.ipynb` to understand the data.
 2. Run **`notebooks/CEO_request.ipynb`** for the complete P&L optimization analysis and final recommendations.
 
-## 📈 Methodology: The P&L Model
+## Methodology: The P&L Model
 
 To determine profitability, we modeled the P&L as follows:
 
-- **💰 Revenues**:
+- **Revenues**:
   - **10%** commission on product sales.
   - **80 BRL** monthly subscription fee per seller.
 
-- **💸 Costs**:
+- **Costs**:
   - **IT Costs**: Modeled as scaling with the square root of the number of sellers and items sold (reflecting scale efficiency).
   - **Reputation Costs**: Estimated monetary loss associated with bad reviews (e.g., 1-star review = high cost due to churn/support).
 
@@ -99,10 +99,10 @@ To determine profitability, we modeled the P&L as follows:
 ---
 *Based on the Olist E-commerce Public Dataset.*
 
-## 🗄️ Data Schema
+## Data Schema
 ![Olist Schema](Olist_schema_v2.png)
 
-## 📊 Visualizations
+## Visualizations
 ![alt text](Olist_profit_loss.png)
 ![alt text](Repartition_of_olist_profit.png)
 
