@@ -105,4 +105,3 @@ To determine profitability, we modeled the P&L as follows:
 ## Visualizations
 ![alt text](Olist_profit_loss.png)
 ![alt text](Repartition_of_olist_profit.png)
-
