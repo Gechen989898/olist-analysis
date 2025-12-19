@@ -35,9 +35,3 @@ class Olist:
 
         self.data = data
         return self.data
-
-    def ping(self):
-        """
-        You call ping I print pong.
-        """
-        print("pong")
